@@ -4,9 +4,11 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http';
 import {AppRoutingModule} from './app-routing.module';
 import {RouterModule} from '@angular/router';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,

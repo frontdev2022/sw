@@ -1,0 +1,27 @@
+.param {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.param__value {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.residents {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+app-resident-preview {
+  display: block;
+  margin-right: 10px;
+}
+
+.main-preloader {
+  margin: 50px 0;
+}

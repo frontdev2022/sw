@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.row app-planet-preview {
+  display: block;
+  flex: 1 0 25%;
+  padding: 0 15px;
+}
+
+.actions {
+  text-align: center;
+}
+
+app-planets-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}

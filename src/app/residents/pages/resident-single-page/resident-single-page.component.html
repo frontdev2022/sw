@@ -1,0 +1,20 @@
+<div class="container">
+  <ng-container *ngIf="resident$| async as resident; else loading">
+    <div class="page-title">{{resident.name}}</div>
+    <div class="param">
+      <div class="param__title">Height:</div>
+      <div class="param__value">{{resident.height}}</div>
+    </div>
+    <div class="param">
+      <div class="param__title">Mass:</div>
+      <div class="param__value">{{resident.mass}}</div>
+    </div>
+    <div class="param">
+      <div class="param__title">Gender:</div>
+      <div class="param__value">{{resident.gender}}</div>
+    </div>
+  </ng-container>
+  <ng-template #loading>
+    <app-preloader class="main-preloader"></app-preloader>
+  </ng-template>
+</div>

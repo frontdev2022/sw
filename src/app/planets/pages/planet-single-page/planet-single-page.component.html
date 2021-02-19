@@ -1,0 +1,40 @@
+<div class="container">
+  <ng-container *ngIf="planet$ | async as planet; else loading">
+    <div class="page-title">{{planet.name}}</div>
+    <div class="param">
+      <div class="param__title">Rotation period:</div>
+      <div class="param__value">{{planet.rotation_period}}</div>
+    </div>
+    <div class="param">
+      <div class="param__title">Diameter:</div>
+      <div class="param__value">{{planet.diameter}}</div>
+    </div>
+    <div class="param">
+      <div class="param__title">Climate:</div>
+      <div class="param__value">{{planet.climate}}</div>
+    </div>
+    <div class="param">
+      <div class="param__title">Gravity:</div>
+      <div class="param__value">{{planet.gravity}}</div>
+    </div>
+    <div class="param">
+      <div class="param__title">Terrain:</div>
+      <div class="param__value">{{planet.terrain}}</div>
+    </div>
+    <div class="param">
+      <div class="param__title">Population:</div>
+      <div class="param__value">{{planet.population}}</div>
+    </div>
+    <div class="residents">
+      <ng-container *ngIf="planet.residents | async as residents; else resLoading">
+        <app-resident-preview *ngFor="let resident of residents" [resident]="resident"></app-resident-preview>
+      </ng-container>
+      <ng-template #resLoading>
+        <app-preloader></app-preloader>
+      </ng-template>
+    </div>
+  </ng-container>
+  <ng-template #loading>
+    <app-preloader class="main-preloader"></app-preloader>
+  </ng-template>
+</div>

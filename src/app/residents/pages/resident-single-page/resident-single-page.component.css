@@ -1,0 +1,16 @@
+.param {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.param__value {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.main-preloader {
+  margin: 50px 0;
+}
