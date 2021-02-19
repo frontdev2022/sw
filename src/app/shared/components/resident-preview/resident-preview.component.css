@@ -1,0 +1,25 @@
+.resident {
+  padding: 20px;
+  border-radius: 0;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  background-color: #272b30;
+  min-width: 200px;
+}
+
+.resident__name {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.resident__param {
+  margin-bottom: 10px;
+  text-align: center;
+}

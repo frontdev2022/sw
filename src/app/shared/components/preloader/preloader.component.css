@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+svg {
+  height: 100%;
+}

@@ -1,0 +1,17 @@
+<app-planets-header>
+  Current page: <b>{{currentPage}}</b>
+</app-planets-header>
+<div class="container">
+  <div class="row" *ngFor="let planets$ of list$">
+    <ng-container *ngIf="planets$ | async as planets; else loading">
+      <app-planet-preview *ngFor="let planet of planets" [planet]="planet"></app-planet-preview>
+    </ng-container>
+    <ng-template #loading>
+      <app-preloader></app-preloader>
+    </ng-template>
+  </div>
+  <div class="actions" *ngIf="!isLoadingMore">
+    <button type="button" class="btn" (click)="loadNext()" *ngIf="planets.totalPages > currentPage">Load more</button>
+  </div>
+</div>
+

@@ -1,0 +1,10 @@
+<div class="planet">
+  <div class="planet__name">{{planet.name}}</div>
+  <div class="row">
+    <div class="planet__climate">Climate: <b>{{planet.climate}}</b></div>
+    <div class="planet__population">Population: <b>{{planet.population}}</b></div>
+  </div>
+  <div class="actions">
+    <a [routerLink]="['/', 'planets', planet.id]" class="btn btn--sm">More</a>
+  </div>
+</div>

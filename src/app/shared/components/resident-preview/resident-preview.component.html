@@ -1,0 +1,11 @@
+<div class="resident">
+  <div class="resident__name">{{resident.name}}</div>
+  <div class="row">
+    <div class="resident__param">Height: <b>{{resident.height}}</b></div>
+    <div class="resident__param">Mass: <b>{{resident.mass}}</b></div>
+    <div class="resident__param">Gender: <b>{{resident.gender}}</b></div>
+  </div>
+  <div class="actions">
+    <a [routerLink]="['/', 'residents', resident.id]" class="btn btn--sm">More</a>
+  </div>
+</div>
